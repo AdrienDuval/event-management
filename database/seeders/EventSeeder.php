@@ -19,7 +19,6 @@ class EventSeeder extends Seeder
             $user = $users->random();
             \App\Models\Event::factory()->create([
                 'user_id' => $user->id
-
             ]);
         }
     }
